@@ -84,5 +84,48 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>
+
+
+    function togglePassword(id) {
+        let toggle = document.getElementById(`eye-toggle${id}`);
+    let password = document.getElementById(`password-field${id}`)
+        if (password.type === "password") {
+            password.type = "text"
+            toggle.classList.remove("fa-eye");
+            toggle.classList.add("fa-eye-slash");
+        } else {
+            password.type = "password"
+            toggle.classList.remove("fa-eye-slash");
+            toggle.classList.add("fa-eye");
+        }
+    }
+
+    function ToggleAddPass() {
+        let toggle = document.getElementById(`add-pass-toggle`);
+    let password = document.getElementById(`add-pass-field`)
+        if (password.type === "password") {
+            password.type = "text"
+            toggle.innerHTML = "hide"
+        } else {
+            password.type = "password"
+            toggle.innerHTML = "show"
+
+        }
+    }
+
+    function ToggleEditPass() {
+        let toggle = document.getElementById(`edit-pass-toggle`);
+    let password = document.getElementById(`edit-pass-field`)
+        if (password.type === "password") {
+            password.type = "text"
+            toggle.innerHTML = "hide"
+        } else {
+            password.type = "password"
+            toggle.innerHTML = "show"
+
+        }
+    }
+</script>
 </body>
 </html>

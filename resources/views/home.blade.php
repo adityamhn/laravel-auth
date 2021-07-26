@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <a href="passwords/" class="my-5 btn btn-primary">View Passwords</a>
+    <a href="{{ route('passwords.index') }}"  class="my-5 btn btn-primary">Manage Passwords</a>
 </div>
 
 

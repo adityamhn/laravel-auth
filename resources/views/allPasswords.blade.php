@@ -28,7 +28,7 @@
             <td>{{$password -> id }}</td>
             <td>{{$password -> name }}</td>
             <td>{{$password -> username }}</td>
-            <td>{{ $password -> password}}</td>
+            <td><input id="password-field{{$password -> id }}" type="password" value="{{ $password -> password}}" readonly /><i onclick="togglePassword({{$password -> id }})" id="eye-toggle{{$password -> id }}" style="cursor:pointer;" class="fa fa-eye ml-2" /></td>
             <td>
             <form action="{{ route('passwords.destroy',$password->id) }}" method="POST">
    

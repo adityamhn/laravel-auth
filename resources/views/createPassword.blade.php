@@ -31,7 +31,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Password : </strong>
-                <input class="form-control" name="password" placeholder="Enter your password" />
+                <input id="add-pass-field" type="password" class="form-control" name="password" placeholder="Enter password" /><div onclick="ToggleAddPass()" id="add-pass-toggle" style="cursor:pointer;">show</div>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

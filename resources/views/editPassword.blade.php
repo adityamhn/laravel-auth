@@ -34,7 +34,8 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Password:</strong>
-                    <input type="text" name="password" value="{{ $password->password }}" class="form-control" placeholder="Enter password">
+                    <input id="edit-pass-field" type="password" name="password" value="{{ $password->password }}" class="form-control" placeholder="Enter password">
+                    <div onclick="ToggleEditPass()" id="edit-pass-toggle" style="cursor:pointer;">show</div>
 
                 </div>
             </div>
