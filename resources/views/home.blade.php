@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- <div class="container">
-    <div class="row justify-content-center">
+<div class="container d-flex flex-column align-items-center">
+    <div class="row col-sm-12 justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
@@ -19,9 +19,11 @@
             </div>
         </div>
     </div>
-</div> -->
+    <a href="passwords/" class="my-5 btn btn-primary">View Passwords</a>
+</div>
 
-   <div class="row px-4">
+
+   <!-- <div class="row px-4">
         <div class="col-lg-12 margin-tb my-4">
             <div class="pull-left">
                 <h2>Manage Your Passwords</h2>
@@ -33,7 +35,6 @@
     </div>
    
 
-   
     <table class="table table-bordered">
         <tr>
             <th>No</th>
@@ -56,7 +57,7 @@
                 </form>
             </td>
         </tr>
-    </table>
+    </table> -->
   
 
 @endsection
